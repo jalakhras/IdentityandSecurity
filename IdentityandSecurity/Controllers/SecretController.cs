@@ -6,8 +6,8 @@ using System.Web.Mvc;
 
 namespace IdentityandSecurity.Controllers
 {
-    [Authorize]
-   // [Authorize(Users = "admin")]
+    //[Authorize]
+    [Authorize(Users = "admin")]
     public class SecretController : Controller
     {
         public ContentResult Secret()
@@ -15,7 +15,7 @@ namespace IdentityandSecurity.Controllers
             return Content("This is a secret...");
         }
 
-        //[AllowAnonymous]
+        [AllowAnonymous]
         public ContentResult Overt()
         {
             return Content("This is not a secret....");
