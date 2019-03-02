@@ -58,11 +58,12 @@ namespace IdentityandSecurity
             //   appId: "",
             //   appSecret: "");
 
-            //app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
-            //{
-            //    ClientId = "",
-            //    ClientSecret = ""
-            //});
+            app.UseGoogleAuthentication(new GoogleOAuth2AuthenticationOptions()
+            {
+                ClientId = "131533043297-bqdhn5ncas1nssqrrcfjbqr6ta5rvuip.apps.googleusercontent.com",
+                ClientSecret = "eG_o2iUWski9Y8vwAJBwwgL2"
+            });
+
         }
     }
 }
